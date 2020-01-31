@@ -1,5 +1,5 @@
 <script>
-    import { todoFromStore } from './store';
+    import { todoFromStore } from '../stores/store';
 
     let currentTodo = ' ';
 

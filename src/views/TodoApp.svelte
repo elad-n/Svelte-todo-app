@@ -3,7 +3,7 @@
     import { fly } from 'svelte/transition';
     import AddTodo from './AddTodo.svelte';
     // import the global store.
-    import { todoFromStore } from './store';
+    import { todoFromStore } from '../stores/store';
 
     let todos = todoFromStore;
     let currentFilter = 'all';
@@ -45,8 +45,7 @@
 </script>
 
 <div class="app-container">
-    <img src={'/img/svelte-logo-horizontal.svg'} alt="svelte logo" class="logo">
-
+    <h1>Todo App</h1>
     <AddTodo />
 
     <div class="current-filter-container">current filter - {currentFilter}</div>

@@ -1,10 +1,25 @@
 <script>
-    import TodoApp from './TodoApp.svelte';
+    import { Router, Route } from "svelte-routing";
+    import TodoApp from './views/TodoApp.svelte';
+    import Intro from './views/Intro.svelte';
+    import NavLink from "./components/NavLink.svelte";
+    export let url = "";
 	export let name;
 </script>
 
 <main>
-	<TodoApp />
+    <img src={'/img/svelte-logo-horizontal.svg'} alt="svelte logo" class="logo">
+
+    <Router url="{url}">
+      <nav>
+        <NavLink to="/">Intro</NavLink>
+        <NavLink to="todoapp">todo app</NavLink>
+      </nav>
+      <div>
+        <Route path="/" component="{Intro}" />
+        <Route path="/todoapp" component="{TodoApp}" />
+      </div>
+    </Router>
 </main>
 
 <style>
