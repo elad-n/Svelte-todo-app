@@ -1,21 +1,18 @@
 <script>
 	import { fade } from 'svelte/transition';
     import { fly } from 'svelte/transition';
+    import AddTodo from './AddTodo.svelte';
+    // import the global store.
+    import { todoFromStore } from './store';
 
-    export let todos = [
-        { id: 1, title: 'Learn Svelte', completed: false },
-        { id: 2, title: 'Write todo app', completed: false },
-        { id: 3, title: 'Teach it', completed: false },
-        { id: 4, title: 'Go to sleep', completed: false },
-    ];
-
-    let currentTodo= ' ';
+    let todos = todoFromStore;
     let currentFilter = 'all';
 
-    const addTodo = () => {
-        todos = [...todos, {id: todos.length + 1, title: currentTodo, completed: false }];
-        currentTodo= ' ';
-    };
+    // subscribe to any change in this value from the store.
+    todoFromStore.subscribe(value => {
+      // here can do whatever we want we the new changed (probably from a different component to out store todos)
+      todos = value;
+    });
 
     const deleteTodo = (id) => {
         todos = todos.filter(todo => todo.id !== id);
@@ -50,12 +47,9 @@
 <div class="app-container">
     <img src={'/img/svelte-logo-horizontal.svg'} alt="svelte logo" class="logo">
 
-    <div class="input-container">
-        <input placeholder="What needs to be done"  class="todo-input" type="text" bind:value={currentTodo} >
-        <button on:click={()=>{addTodo()}}> add todo </button>
-    </div>
+    <AddTodo />
 
-    <div class="current-filter-container">current filter {currentFilter}</div>
+    <div class="current-filter-container">current filter - {currentFilter}</div>
 
     <div class="list-container">
         {#each filteredTodos as {id, title, completed}, i}
@@ -102,38 +96,26 @@ svg {
             display: flex;
             justify-content: flex-start;
         }
-        .input-container {
-            display: flex;
-            .todo-input {
-                        width: 100%;
-                        padding: 10px 18px;
-                        font-size: 18px;
-            }
-        }
-    }
-    .list-container {
-        margin-top: 20px;
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        .todo-item-container {
-
-            width: 100%;
-                            display: flex;
-        flex: 1;
-                            margin-bottom: 12px;
+        .list-container {
+                margin-top: 20px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+            .todo-item-container {
+                    width: 100%;
+                    display: flex;
+                    flex: 1;
+                    margin-bottom: 12px;
                     animation-duration: 0.3s;
                     justify-content: space-between;
-
-             .todo-item {
-                   cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                }
-        }
+            .todo-item {
+                         cursor: pointer;
+                         display: flex;
+                         align-items: center;
+                    }
+         }}
     }
-
     .title {
         margin-left: 10px;
         margin-right: 10px;
