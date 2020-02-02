@@ -14,25 +14,27 @@
       todos = value;
     });
 
-    const deleteTodo = (id) => {
+    function deleteTodo(id) {
         todos = todos.filter(todo => todo.id !== id);
-    };
+    }
 
-    const toggleCheck = (id) => {
+    function toggleCheck(id) {
         todos = todos.map(item=> {
           if(item.id === id) item.completed = !item.completed;
           return item;
         });
-    };
+    }
 
-    const updateFilter = filter => currentFilter = filter;
+    function updateFilter(filter) {
+        currentFilter = filter;
+    }
 
-    const checkAll = () => {
+    function checkAll() {
       todos = todos.map(item => {
         item.completed = true;
         return item;
       });
-    };
+    }
 
 	$: filteredTodos = currentFilter === 'all'
 		? todos

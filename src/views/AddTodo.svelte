@@ -3,17 +3,22 @@
 
     let currentTodo = ' ';
 
-    const addTodo = () => {
-        todoFromStore.update(value => {
-          return [...value, {id: value.length + 1, title: currentTodo, completed: false }];
-        });
-        currentTodo= ' ';
+    function addTodo() {
+         todoFromStore.update(value => {
+              return [...value, {id: value.length + 1, title: currentTodo, completed: false }];
+         });
+         currentTodo= ' ';
     }
+
+    function handleInput(event) {
+      console.log(event);
+      currentTodo = event.target.value;
+    };
 
 </script>
 
 <div class="input-container">
-    <input placeholder="What needs to be done"  class="todo-input" type="text" bind:value={currentTodo} >
+    <input placeholder="What needs to be done" class="todo-input" type="text" value={currentTodo} on:input={handleInput} >
     <button on:click={()=>{addTodo()}}> add todo </button>
 </div>
 
