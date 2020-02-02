@@ -10,15 +10,10 @@
          currentTodo= ' ';
     }
 
-    function handleInput(event) {
-      console.log(event);
-      currentTodo = event.target.value;
-    };
-
 </script>
 
 <div class="input-container">
-    <input placeholder="What needs to be done" class="todo-input" type="text" value={currentTodo} on:input={handleInput} >
+    <input placeholder="What needs to be done"  class="todo-input" type="text" bind:value={currentTodo} >
     <button on:click={()=>{addTodo()}}> add todo </button>
 </div>
 

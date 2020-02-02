@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9776d12c-c510-4837-995e-838aff35816f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/views/AddTodo.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AddTodo.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/TodoApp.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/TodoApp.svelte" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/TodoApp.svelte">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="251">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#10#51#0#HTML" expanded="true" />
                 <element signature="e#3859#4048#0#HTML" />
@@ -30,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/AddTodo.svelte">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="273">
+              <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -132,8 +131,8 @@
         <option value="$PROJECT_DIR$/src/TodoApp.svelte" />
         <option value="$PROJECT_DIR$/src/App.svelte" />
         <option value="$PROJECT_DIR$/src/components/NavLink.svelte" />
-        <option value="$PROJECT_DIR$/src/views/AddTodo.svelte" />
         <option value="$PROJECT_DIR$/src/views/TodoApp.svelte" />
+        <option value="$PROJECT_DIR$/src/views/AddTodo.svelte" />
       </list>
     </option>
   </component>
@@ -160,6 +159,23 @@
             <path>
               <item name="svelte-todo-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="svelte-todo-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="svelte-todo-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="svelte-todo-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="svelte-todo-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="svelte-todo-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="svelte-todo-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="svelte-todo-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="stores" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,7 +228,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17837000" />
+    <option name="totallyTimeSpent" value="18052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="889" y="0" width="791" height="1050" extended-state="0" />
@@ -274,12 +290,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.svelte">
+    <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/TodoApp.svelte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#13#60#0#HTML" expanded="true" />
+            <element signature="e#10#51#0#HTML" expanded="true" />
+            <element signature="e#3859#4048#0#HTML" />
+            <element signature="e#4072#4191#0#HTML" />
           </folding>
         </state>
       </provider>
@@ -291,13 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/Intro.svelte">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -305,22 +323,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/AddTodo.svelte">
+    <entry file="file://$PROJECT_DIR$/src/App.svelte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="402">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#13#60#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/TodoApp.svelte">
+    <entry file="file://$PROJECT_DIR$/src/views/AddTodo.svelte">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <element signature="e#10#51#0#HTML" expanded="true" />
-            <element signature="e#3859#4048#0#HTML" />
-            <element signature="e#4072#4191#0#HTML" />
-          </folding>
+        <state relative-caret-position="273">
+          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
         </state>
       </provider>
     </entry>
